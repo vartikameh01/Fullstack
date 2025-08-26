@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prachi Agarwal | Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #ad296b;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+      position: relative; /* so image positions relative to header */
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 40px;
+    }
+
+    .about, .services, .contact {
+      background-color: white;
+      margin: 20px auto;
+      max-width: 900px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+
+    h2 {
+      color: #e04794;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    form button {
+      background-color: #ad6c8c;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+
+    /* Corner Image */
+    .corner-image {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      width: 70px;       /* adjust as you like */
+      height: 70px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    /* Optional: make image clickable with no underline */
+    .logo-link { text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Vartika Mehrotra</h1>
+    <p>B.Tech CSE | Tech Enthusiast | Learner</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Corner image inside header (Unsplash portrait, free to use) -->
+    <a href="#top" class="logo-link" aria-label="Go to top">
+      <img
+        src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=200&h=200&fit=crop&crop=faces"
+        alt="Profile photo"
+        class="corner-image"
+        loading="lazy"
+      >
+    </a>
+  </header>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>Hello! My name is Vartika Mehrotra. I am a third-year B.Tech Computer Science Engineering student. I have a deep interest in web development, UI/UX design, and data structures. I enjoy building meaningful projects and constantly exploring new technologies to grow in the tech world.</p>
+  </section>
+
+  <section id="services" class="services">
+    <h2>My Skills</h2>
+    <ul>
+      <li>Frontend Development (HTML, CSS, JavaScript)</li>
+      <li>React.js</li>
+      <li>C and Data Structures</li>
+      <li>Python Programming</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Vartika Mehrotra. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
